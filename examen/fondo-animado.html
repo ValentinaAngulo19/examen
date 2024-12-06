@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón ver más</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        font-family: "Urbanist", serif;
+        scroll-behavior: smooth;
+    }
+
+    div {
+        width: 100%;
+        height: 100vh;
+        background-color: bisque;
+        background-image: linear-gradient(
+            rgba(255, 192, 203, 0.504),
+            rgba(0, 255, 255, 0.504)), url("assets/img/img1.jpg");
+        background-position: 100% 50%;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: fondo 10s ease-in-out infinite;
+    }
+    @keyframes  fondo{
+        0%{background-position: 0% 50%;}
+        50%{background-position: 100% 50%;}
+        100%{background-position: 0% 50%;}
+    }
+    @media screen and (min-widht: 1024px){
+        div {
+            animation: fondo 10s ease-in-out infinite;
+            background-size: 200%;
+        }
+    }
+    @keyframes fondoescritorio {
+        0%{background-position: 0% 50%;}
+        50%{background-position: 100% 50%;}
+        100%{background-position: 0% 50%;} 
+
+    }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hoja 1</h1>
+    </div>
+    
+</body>
+</html>
